@@ -1,0 +1,20 @@
+# for more customization run `man 5 sway`.
+
+# setting border colors:
+# border = border color around the title-bar.
+# background = background color of the title-bar.
+# text = text color of the title-bar.
+# indicator = indicator color.
+# child_border = border color around the window view-port.
+# class                 border  backgr. text    indicat. child_border
+client.focused          #5F97F6 #5F97F6 #181818 #5F97F6  #5F97F6
+client.focused_inactive #212121 #212121 #E0E0E0 #212121  #212121
+client.unfocused        #212121 #212121 #E0E0E0 #212121  #212121
+client.urgent           #E06D76 #E06D76 #181818 #E06D76  #E06D76
+
+# the default border size
+for_window [app_id=".*"] border pixel 2
+
+# the gaps in between to windows in tiling mode
+gaps inner 12
+gaps outer 8

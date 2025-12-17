@@ -3,7 +3,7 @@
 set -Ee
 
 install_dependencies() {
-    dependencies="sway swaybg waybar alacritty wofi grim slurp pulseaudio-utils brightnessctl zip swayidle swaylock playerctl pamixer autotiling"
+    dependencies="sway swaybg waybar alacritty wofi grim slurp pulseaudio-utils brightnessctl zip swayidle swaylock playerctl pamixer autotiling xwayland"
     echo "This script will attempt to install the following required packages:"
     echo "$dependencies"
     echo ""

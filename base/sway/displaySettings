@@ -1,6 +1,0 @@
-# Output configuration for ThinkPad X1C9
-# Based on user-provided resolution.
-# The output name 'eDP-1' is a common standard, but may need to be verified.
-# If this configuration doesn't work, run `swaymsg -t get_outputs` to find the correct name.
-
-output eDP-1 resolution 1920x1200@60Hz

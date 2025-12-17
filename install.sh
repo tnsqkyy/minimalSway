@@ -6,7 +6,7 @@ set -e
 # --- Functions ---
 
 install_dependencies() {
-    dependencies="sway swaybg waybar alacritty wofi grim slurp pulseaudio-utils brightnessctl zip swayidle swaylock mako swaynag playerctl pamixer autotiling"
+    dependencies="sway swaybg waybar alacritty wofi grim slurp pulseaudio-utils brightnessctl zip swayidle swaylock mako playerctl pamixer autotiling"
     echo "This script will attempt to install the following required packages:"
     echo "$dependencies"
     echo ""

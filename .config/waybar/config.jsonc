@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 30,
+    "modules-left": ["sway/workspaces"],
+            "modules-center": ["clock#date", "clock#time", "sway/mode"],
+            "modules-right": ["backlight", "pulseaudio", "battery"],
+        
+            "clock#date": {
+              "format": "📅 {:%A, %d-%m-%Y}",
+              "tooltip-format": "<big>{:%A, %d %B %Y}</big>"
+            },    "clock#time": {
+      "format": "{:%H:%M}",
+      "tooltip-format": "<big>{:%H:%M:%S}</big>"
+    },
+
+    "sway/workspaces": {
+        "sort-by": "number",
+        "persistent-workspaces": true
+    }
+    ,
+
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}  {capacity}%",
+      "format-charging": "🔌 {capacity}%",
+            "format-plugged": "🔋 {capacity}%",
+            "format-full": "🔋 {capacity}%",
+      "format-icons": ["", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon} {volume}%",
+      "format-muted": "🔇",
+      "format-icons": {
+        "headphone": "🎧",
+        "hands-free": "📞",
+        "headset": "🎧",
+        "phone": "📞",
+        "portable": " portable",
+        "car": "🚗",
+        "default": ["🔈", "🔉", "🔊"]
+      },
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon} {percent}%",
+      "format-icons": ["🔅", "🔆", "🔆"],
+      "on-scroll-up": "brightnessctl s 1%+",
+      "on-scroll-down": "brightnessctl s 1%-"
+    }
+
+}

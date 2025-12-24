@@ -1,0 +1,57 @@
+*
+{
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+}
+
+/* Define colors for the white, black, grey theme */
+@define-color black #000000;
+@define-color white #FFFFFF;
+@define-color grey_dark #333333;
+@define-color grey_medium #666666;
+@define-color grey_light #CCCCCC;
+
+window#waybar
+{
+    background: @black;
+    border-bottom: 2px solid @grey_light;
+}
+
+#clock, #pulseaudio, #network, #tray, #battery, #backlight, #clock#date, #clock#time
+{
+    margin: 8px 8px 8px 0px;
+    padding: 2px 8px 2px 8px;
+    color: @black;
+    background-color: @grey_light;
+    border: none;
+}
+
+#workspaces
+{
+    margin: 8px 0px 8px 16px;
+}
+
+#workspaces button
+{
+    padding: 2px 8px;
+    color: @grey_medium;
+    min-width: 24px; /* Ensure consistent width */
+}
+
+#workspaces button.focused
+{
+    color: @white;
+}
+
+#workspaces button.urgent,
+#battery.warning, #battery.critical, #battery.urgent
+{
+    background-color: @grey_dark;
+    padding: 2px 8px;
+    color: @white;
+}

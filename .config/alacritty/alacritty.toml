@@ -1,0 +1,40 @@
+[colors.primary]
+background = '#000000' # Black
+foreground = '#FFFFFF' # White
+
+[colors.normal]
+black   = '#000000' # Black
+red     = '#CC6666' # A reddish grey for visibility, can be adjusted
+green   = '#66CC66' # A greenish grey for visibility, can be adjusted
+yellow  = '#CCCC66' # A yellowish grey for visibility, can be adjusted
+blue    = '#6666CC' # A bluish grey for visibility, can be adjusted
+magenta = '#CC66CC' # A magenta-ish grey for visibility, can be adjusted
+cyan    = '#66CCCC' # A cyan-ish grey for visibility, can be adjusted
+white   = '#CCCCCC' # Light Grey
+
+[colors.bright]
+black   = '#333333' # Dark Grey
+red     = '#FF3333' # Brighter Red
+green   = '#33FF33' # Brighter Green
+yellow  = '#FFFF33' # Brighter Yellow
+blue    = '#3333FF' # Brighter Blue
+magenta = '#FF33FF' # Brighter Magenta
+cyan    = '#33FFFF' # Brighter Cyan
+white   = '#FFFFFF' # White
+
+[font]
+size = 14
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "medium"
+
+[terminal.shell]
+program = "/bin/bash"
+
+[window]
+opacity = 0.6
+
+[window.padding]
+x = 32
+y = 32
